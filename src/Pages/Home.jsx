@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./Home.css";
 
+import { Link } from "react-router-dom";
+
 import logo from "../assets/logo.png";
 import img1 from "../assets/mail1.png";
 import img2 from "../assets/mail2.png";
@@ -102,7 +104,7 @@ const Home = () => {
     return (
         <div>
             {/*-------------------------------- hero --------------------------*/}
-            <section className="hero">
+            <section className="hero" id="Home">
 
 
                 <div className="hero-content">
@@ -157,7 +159,7 @@ const Home = () => {
 
             {/*---------------------------- portfolio------------------------- */}
 
-            <section className="portfolio-section">
+            <section className="portfolio-section" id="Portfolio">
                 <div className="portfolio-header">
                     <h2>
                         Bringing creativity into action, weaving visual
@@ -165,7 +167,9 @@ const Home = () => {
                         stories that connect and convert.
                     </h2>
 
-                    <button>View Full Portfolio</button>
+                    <Link to="/portfolio" className="portfolio-btn">
+                        View Full Portfolio
+                    </Link>
                 </div>
 
                 <div className="slider-wrapper">
@@ -183,7 +187,7 @@ const Home = () => {
 
             {/*----------------------------- service --------------------------*/}
 
-            <section className="services">
+            <section className="services" id="Services">
                 <div className="container">
 
                     <h2 className="services-title">
@@ -241,7 +245,7 @@ const Home = () => {
 
             {/*------------------------------ work---------------------------- */}
 
-            <section className="why-us-section">
+            <section className="why-us-section" id="why-us">
                 <div className="why-container">
 
                     <h2 className="why-heading">
@@ -323,7 +327,7 @@ const Home = () => {
 
             {/*-------------------------- Testimonial-------------------------- */}
 
-            <section className="testimonial-section">
+            <section className="testimonial-section" id="Testimonials">
 
                 <div className="testimonial-container">
 
@@ -416,7 +420,7 @@ const Home = () => {
 
             {/*---------------------------- pricing ---------------------------*/}
 
-            <section className="pricing-section">
+            <section className="pricing-section" id="Pricing">
                 <div className="pricing-container">
 
                     <h2 className="pricing-heading">

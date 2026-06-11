@@ -1,20 +1,29 @@
-import React from 'react'
-import './App.css'
-import Home from './Pages/Home'
-import Navbar from './Components/Navbar'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home";
+import Portfolio from "./pages/Portfolio";
+
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
-
-
   return (
-    <>
-       <div className="left-glow"></div>
-      <div className="right-glow"></div>
+    <BrowserRouter>
+
+      <ScrollToTop />
 
       <Navbar />
-      <Home />
-    </>
-  )
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+      </Routes>
+
+      <Footer />
+
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

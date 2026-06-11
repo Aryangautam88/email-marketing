@@ -1,0 +1,175 @@
+.portfolio-section {
+  padding: 30px 0;
+}
+
+.portfolio-container {
+  width: 87%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.portfolio-container h2 {
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.portfolio-desc {
+  color: #d0cfe8;
+  font-size: 14px;
+  line-height: 1.8;
+  max-width: 1100px;
+  margin-bottom: 60px;
+}
+
+/* MAIN BOX */
+
+.portfolio-box {
+  background: linear-gradient(135deg,
+      #7c45ff 0%,
+      #5325c8 35%,
+      #28106b 100%);
+
+  margin-bottom: 70px;
+
+  border-radius: 35px;
+
+  padding: 45px;
+
+  display: flex;
+  gap: 40px;
+
+  overflow: hidden;
+}
+
+.portfolio-brand {
+  min-width: 140px;
+}
+
+.portfolio-brand h3 {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* GALLERY */
+
+.portfolio-gallery {
+  flex: 1;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+/* EMAIL CARD */
+
+.mail-card {
+  height: 450px;
+
+  overflow-y: auto;
+
+  border-radius: 16px;
+
+  background: white;
+
+  scrollbar-width: thin;
+}
+
+.mail-card img {
+  width: 100%;
+  display: block;
+}
+
+/* WEBKIT SCROLLBAR */
+
+.mail-card::-webkit-scrollbar {
+  width: 6px;
+}
+
+.mail-card::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 10px;
+}
+
+@media (max-width: 992px) {
+
+  .portfolio-container h2 {
+    font-size: 55px;
+  }
+
+  .portfolio-box {
+    flex-direction: column;
+  }
+
+  .portfolio-brand {
+    min-width: auto;
+  }
+
+  .portfolio-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mail-card {
+    height: 550px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .portfolio-section {
+    padding: 80px 0;
+  }
+
+  .portfolio-container {
+    width: 92%;
+  }
+
+  .portfolio-container h2 {
+    font-size: 52px;
+    margin-bottom: 20px;
+  }
+
+  .portfolio-desc {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+  }
+
+  .portfolio-box {
+    padding: 18px;
+    border-radius: 25px;
+    gap: 20px;
+  }
+
+  .portfolio-brand h3 {
+    font-size: 38px;
+  }
+
+  .portfolio-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .mail-card {
+    height: 440px;
+    border-radius: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .portfolio-container h2 {
+    font-size: 42px;
+  }
+
+  .portfolio-brand h3 {
+    font-size: 32px;
+  }
+
+  .mail-card {
+    height: 380px;
+  }
+}

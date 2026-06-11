@@ -8,8 +8,6 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Desktop Navbar */}
-
       <nav className="desktop-navbar">
 
         <div className="nav-logo">
@@ -17,13 +15,12 @@ const Navbar = () => {
         </div>
 
         <ul className="nav-links">
-          <li>Home</li>
-          <li>Portfolio</li>
-          <li>Services</li>
-          <li>Why Us</li>
-          <li>Testimonials</li>
-          <li>Pricing</li>
-          <li>FAQ</li>
+          <li><a href="/#Home">Home</a></li>
+          <li><a href="/#Portfolio">Portfolio</a></li>
+          <li><a href="/#Services">Services</a></li>
+          <li><a href="/#why-us">Why Us</a></li>
+          <li><a href="/#Testimonials">Testimonials</a></li>
+          <li><a href="/#Pricing">Pricing</a></li>
         </ul>
 
         <button className="contact-btn">
@@ -32,7 +29,7 @@ const Navbar = () => {
 
       </nav>
 
-      {/* Mobile Navbar */}
+      {/* Mobile */}
 
       <div className="mobile-wrapper">
 
@@ -48,16 +45,32 @@ const Navbar = () => {
             open ? "show-menu" : ""
           }`}
         >
-          <a href="/">Home</a>
-          <a href="/">Portfolio</a>
-          <a href="/">Services</a>
-          <a href="/">Why Us</a>
-          <a href="/">Testimonials</a>
-          <a href="/">Our Process</a>
-          <a href="/">Pricing</a>
-          <a href="/">Our Team</a>
-          <a href="/">FAQs</a>
-          <a href="/">Contact Us</a>
+          <a href="#Home" onClick={() => setOpen(false)}>Home</a>
+
+          <a href="#Portfolio" onClick={() => setOpen(false)}>
+            Portfolio
+          </a>
+
+          <a href="#Services" onClick={() => setOpen(false)}>
+            Services
+          </a>
+
+          <a href="#why-us" onClick={() => setOpen(false)}>
+            Why Us
+          </a>
+
+          <a href="#Testimonials" onClick={() => setOpen(false)}>
+            Testimonials
+          </a>
+
+          <a href="#Pricing" onClick={() => setOpen(false)}>
+            Pricing
+          </a>
+
+          <a href="#Contact" onClick={() => setOpen(false)}>
+            Contact Us
+          </a>
+
         </div>
 
       </div>
